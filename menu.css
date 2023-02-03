@@ -43,7 +43,7 @@ nav{
     position: sticky !important;
     top: 0;
     z-index: 100;
-    background: rgb(29, 29, 29);
+    background: rgb(0, 0, 0);
     /*margin-bottom: 10px;*/
     
 }
@@ -57,7 +57,7 @@ nav .logo{
 
 
 nav .logo a{
-    color: darkorange;
+    color: #5fe3fa;
     letter-spacing: .3rem;
    
 }
@@ -83,7 +83,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:darkorange;
+    color:rgb(71, 204, 245);
 }
 
 nav .menuBtn{
@@ -111,9 +111,6 @@ nav .menuBtn{
         display: none;
     }
 
-    .sideNav{
-        display: block !important;
-    }
 
     nav .logo{
         font-size: 24px;
@@ -121,8 +118,12 @@ nav .menuBtn{
         padding-left: 20px;
     }
 
+    /*
+    .sideNav{
+        display: block !important;
+    }
 
-   
+    */
 
 }
 
@@ -132,6 +133,8 @@ nav .menuBtn{
 /*--------------------------Side Nav Menu----------------------------*/
 
 .sideNav{
+  
+    display: none;
     height: 100%;
     position: fixed;
     top: 0;
@@ -140,8 +143,8 @@ nav .menuBtn{
     overflow-x: hidden;
     transition: 0.3s ease-in;
     padding-top: 60px;
-    display: none;
     z-index: 200;
+    
 }
 
 .sideNav a{
@@ -177,7 +180,8 @@ nav .menuBtn{
     gap:1.5rem;
     min-height: 100vh;
     align-items: center;
-    background:url(images/home-bg3.jpg) no-repeat;
+    background: #000;
+  /*  background:url(images/home-bg3.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     
@@ -194,7 +198,7 @@ nav .menuBtn{
     font-size: 1.3rem;
     font-weight: 700;
     color: rgb(51, 51, 51);
-    background: darkorange;
+    background: #5fe3fa;
     border-radius: .5rem;
     cursor: pointer;
     padding: .6rem 3rem;
@@ -215,7 +219,7 @@ nav .menuBtn{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5rem;
+    padding: 0 5rem;
 }
 
 
@@ -247,7 +251,7 @@ nav .menuBtn{
 }
 
 .homey .swiper .swiper-slide .content h3{
-    color: darkorange;
+    color: #5fe3fa;;
     font-size: 3rem;
     margin:20px auto;
     
@@ -264,8 +268,25 @@ nav .menuBtn{
 }
 
 .swiper-pagination-bullet-active{
-    background: darkorange;
+    background: #235c89;
+
 }
+
+.swiper-pagination > .swiper-pagination-bullet {
+    opacity: 1;
+    border: white solid 1px;
+    background-color: transparent;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+
+
+
+
+
+ 
 
 
 /*--------------------------Header responsiveness-----------------------------*/
@@ -274,7 +295,8 @@ nav .menuBtn{
 
 
     .homey{
-        margin-top: -170px;
+        margin-top: -190px;
+        height: 100vh;
     }
 
     .homey .swiper .swiper-slide{
@@ -299,14 +321,13 @@ nav .menuBtn{
         font-size: 1rem;
         letter-spacing: .4rem;
         
-        
     }
 
     .homey .swiper .swiper-slide .content h3{
         font-size: 2.3rem;
         margin: 0; 
         padding-bottom: 20px;
-        color: darkorange;
+        
     }
 
     .homey .swiper .swiper-slide .content p{
@@ -333,7 +354,13 @@ nav .menuBtn{
 
 @media screen and (max-width:600px) {
     .homey{
-        margin-top: -30px;
+        margin-top: -50px;
+    }
+
+    nav .logo{
+        font-size: 20px;
+      
+       
     }
 
     .homey .swiper .swiper-slide{
@@ -353,6 +380,13 @@ nav .menuBtn{
         font-size: 1.5rem;
     }
 
+    .homey .swiper .swiper-slide .content span{
+        
+        font-size: .8rem;
+        
+        
+    }
+
     .btn{
         margin-top: 12px;
     }
@@ -368,91 +402,27 @@ nav .menuBtn{
 
 }
 
+@media screen and (max-width:400px) {
+    .homey{
+        margin-top: -48px;
+    }
 
+    nav .logo{
+        font-size: 18px;
+      
+       
+    }
 
+    .homey .swiper .swiper-slide .image img{
+        width: 200px;
+        
+        
+    }
 
-/*----------------------------END of Header CSS----------------------------*/
-
-
-
-/*--------------------CSS for the header----------------------*/
-/*
-.row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    padding-top: 50px;
-    background: url(images/header.jpg);
 }
 
-.row .column1{
 
-    margin-right: -100px;
-    padding-left: 180px;
-    margin-top: -40px;
-    
-}
 
-.row .column1 h1{
-    line-height: 54px;
-    padding-bottom: 50px;
-}
-
-.row .column2{
-  
-    display: flex;
-    margin-right: 40px;
-    
-}
-
-.row .column2 img{
-  
-    width: 900px;
-    display: flex;
-    margin-top: -30px;
-    margin-bottom: 100px;
-    
-}
-
-.column1 h1{
-    font-size: 48px;
-    margin-bottom: 10px;
-    white-space: nowrap;
-}
-
-.column1 p{
-    font-size: 18px;
-    margin-bottom: 60px;
-    
-}
-
-.column1 button{
-    width: 150px;
-    padding: 12px 20px;
-    border-radius: 20px;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    font-weight: 600;
-    margin: 0;
-    background-color: darkorange;
-    
-    
-}
-
-.column1 button a{
-    text-decoration: none;
-}
-
-.column1 button:hover{
-    background-color: rgb(255, 81, 0);
-    transition: 0.1s ease-in;
-    cursor: pointer;
-   
-    
-}
-*/
 
 
 /*----------------Header responsiveness--------------------*/
@@ -475,25 +445,30 @@ nav .menuBtn{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: #3f3f3f;
-    padding-top: 100px;
+    background: #222222;
+    
+    
+    
 }
 
 .about .kontent img{
     height: auto;
     width: 500px;
     max-width: 100%;
+
+    
+    
 }
 
 .text{
-    width: 480px;
+    width: 600px;
     max-width: 100%;
     padding: 0 10px;
 }
 
 .kontent{
     width: 1280px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -501,16 +476,18 @@ nav .menuBtn{
     justify-content: space-around;
 }
 
+
+
 .text h1{
-    color: darkorange;
+    color: #5fe3fa;
     font-size: 58px;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
 
 .text h5{
-    color: rgb(175, 175, 175);
-    font-size: 22px;
+    color: rgb(223, 223, 223);
+    font-size: 21px;
     margin-bottom: 25px;
     text-transform: capitalize;
     
@@ -524,7 +501,7 @@ nav .menuBtn{
 }
 
 button{
-    background-color: darkorange;
+    background-color: #5fe3fa;
     color: black;
     border: 2px solid transparent;
     text-decoration: none;
@@ -539,9 +516,10 @@ button a{
 }
 
 button:hover{
-    background-color: rgb(255, 81, 0);
+    background-color: darkorange;
     transition: 0.1s ease-in;
     cursor: pointer;
+    
 }
 
 @media screen and (max-width:820px){     /*-----IPAD------*/
@@ -590,9 +568,6 @@ button:hover{
 
 
 @media screen and (max-width:650px){      /*-----PHONE------*/
-    
- 
-  
 
     .about{
         height: 100vh;
@@ -627,6 +602,27 @@ button:hover{
 
 }
 
+@media screen and (max-width:420px){
+    .about .kontent img{
+        margin-top: -100px;
+        
+    }
+
+    .about{
+        height: fit-content;
+        margin-bottom: 0;
+        
+    }
+
+    .about .kontent{
+        max-width: 270px;
+    }
+
+    .about .kontent h5{
+        font-size: 12px;
+    }
+}
+
 
 
 /*--------------------CSS for the Gallery-----------------*/
@@ -650,10 +646,7 @@ button:hover{
 }
 
 .container .webDev h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+   
     padding: 70px;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -665,11 +658,15 @@ button:hover{
 .container .webDev h2::after{
     content: '';
     display: block;
+    justify-content: center;
+    align-items: center;
     background: darkorange;
-    width: 316px;
+    width: 320px;
     height: 5px;
-    margin: 170px auto 100px;
-    position: absolute;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+    
 }
 
 .container .webDev img{
@@ -719,14 +716,68 @@ button:hover{
     width: 100%;
 }
 
+.gallery .logo-border img{
+    border: 1px solid rgb(226, 226, 226);
+    
+}
+
 
 /*-------------------------------Gallery responsive---------------------------*/
 
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:600px) {
 
+    .container{
+        padding-bottom: 40px;
+    }
+    .container .portfolioHeader{
+       
+        font-size: 13px;
+        letter-spacing: .3rem;
+        color: rgb(133, 133, 133); 
+    }
+
+    .portfolioHeader h2::after{
+        width: 128px;
+        height: 3px;
+        margin-top: 5px;
+    }
+
+    .container .webDev h2{
+    
+        font-size: 15px;
+        letter-spacing: .3rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .container .webDev h2::after{
+
+        width: 209px;
+        height: 3px;
+        padding-top: 10px;
+        margin-top: 5px;
+        padding: 0;
+        
+    }
     
 
+}
+
+@media screen and (max-width:420px) {
+    .portfolioHeader h2::after{
+        position: relative;
+    }
+
+    .gallery{
+        margin-top: -100px;
+    }
+    
 }
 
 
@@ -735,7 +786,6 @@ button:hover{
 
 .contactBody{
     width: 100%;
-    height: 100vh;
     background: #f0f0f0;
     display: inline-block;
     align-items: center;
@@ -760,11 +810,13 @@ button:hover{
 .contactHeader h2::after{
     content: '';
     display: block;
+    justify-content: center;
+    align-items: center;
     background: darkorange;
-    width: 230px;
+    width: 200px;
     height: 5px;
     margin: 10px auto 50px;
-    position: absolute;
+    
     
 }
 
@@ -778,6 +830,7 @@ form{
     max-width: 600px;
     border-radius: 10px;
     margin: auto;
+    margin-bottom: 80px;
 }
 
 form h3{
@@ -808,8 +861,8 @@ form textarea{
 
 form button{
     padding: 15px;
-    background: ff5361;
-    color: #fff;
+    background: #5fe3fa;
+    color: #222222;
     font-size: 18px;
     border: 0;
     outline: none;
@@ -817,6 +870,7 @@ form button{
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+    
 }
 
 
@@ -826,6 +880,18 @@ form button{
     .contactBody{
         height: 80vh;
     }
+
+}
+
+@media screen and (max-width:600px) {
+    .contactBody{
+        height: 100vh;
+    }
+
+    form button{
+        margin-bottom: 20px;
+    }
+    
 }
 
 
@@ -835,18 +901,16 @@ form button{
 /*-----------------------Footer section--------------------------*/
 
 .footer{
-    padding: 160px 80px 20px;
+    padding-top: 50px;
     background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: block;
     align-items: center;
 
 }
 
 .footer .social{
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     color: #4b4c4d;
 }
 
@@ -896,7 +960,8 @@ form button{
 }
 
 .footer .copyright{
-    
+    padding-top: 40px;
+    padding-bottom: 30px;
     text-align: center;
     font-size: 16px;
     color: #aaa;
@@ -904,14 +969,41 @@ form button{
 }
 
 
+/*----------------------------Responsive Footer-------------------------------*/
+
+@media screen and (max-width:820px) {
+    .footer{
+        padding: 60px 10px 20px;
+        
+    }
+
+    .footer .social a{
+        font-size: 19px;
+        padding: 0;
+    }
+
+    .footer ul li{
+        padding:4px;
+        font-size: 14px;
+        
+    }
+
+    .copyright{
+        padding-top: 60px;
+    }
+
+
+}
+
+@media screen and (max-width:420px) {
+    .contactBody{
+        height: fit-content;
+    }
+}
 
 
 
 /*----------------------------Our Services section---------------------------------*/
-
-
-
-    
 
 
 
@@ -934,7 +1026,7 @@ form button{
     padding-top: 60px;
     padding-bottom: 32px;
     font-size: 20px;
-    color: rgb(133, 133, 133);
+    color: rgb(80, 80, 80);
     
     
 }
@@ -942,11 +1034,13 @@ form button{
 .servicesHeader h2::after{
     content: '';
     display: block;
+    justify-content: center;
+    align-items: center;
     background: darkorange;
-    width: 230px;
+    width: 200px;
     height: 5px;
     margin: 10px auto 50px;
-    position: absolute;
+    
 }
 
 .cardsHolder{
@@ -956,7 +1050,8 @@ form button{
     padding-top: 64px;
 }
 
-.card{
+.cardsHolder .card{
+    
     background: white;
     width: 330px;  
     margin: 10px;
@@ -964,6 +1059,7 @@ form button{
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
+   
 }
 
 .card:hover{
@@ -974,6 +1070,7 @@ form button{
 
 
 .card-image{
+    
     height: 330px;
     margin-bottom: 20px;
     border-radius: 15px 15px 0 0;
@@ -986,7 +1083,7 @@ form button{
 }
 
 .card-2{
-    background-image: url(images/coffee-card.png);
+    background-image: url(images/vukajoe-card.png);
 }
 
 .card-3{
@@ -995,6 +1092,7 @@ form button{
 
 .card h2{
     padding: 10px;
+    color: darkorange;
 }
 
 .card h3{
@@ -1008,12 +1106,12 @@ form button{
 }
 
 .card a{
-    background-color: black;
-    color: #fff;
+    background-color: #5fe3fa;
+    color: #222222;
     padding: 10px 15px;
     display: block;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 20px 60px;
     text-decoration: none;
     border-radius: 10px;
@@ -1030,7 +1128,74 @@ form button{
 }
 
 
+/*-----------------------Our services responsive--------------------------*/
 
+
+
+@media screen and (max-width:820px) {
+    .kontainer .servicesHeader{
+        letter-spacing: .2rem;
+        font-size: 13px;  
+    }
+    
+    .servicesHeader h2::after{
+     
+        width: 162px;
+        height: 3px;
+        margin-top: 5px;
+        height: 5px;
+       
+        
+    }
+}
+
+@media screen and (max-width:600px) {
+    .kontainer{
+        padding-top: 20px;
+    }
+
+    .cardsHolder{
+        padding-top: 0;
+        
+    }
+
+    .card{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .card-image{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    
+.card ul{
+    margin-left: 40px;
+}
+
+.card h2{
+    font-size: 21px;
+    text-align: start;
+    padding-left: 25px;
+}
+
+.card h3{
+    text-align: start;
+    padding-left: 25px;
+    font-size: 38px;
+    color: darkorange;
+}
+
+
+
+}
 
 
 
