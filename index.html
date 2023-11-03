@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kagiso mahoko portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!---------------------------Header section--------------------------------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#porti">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Illustrator & Graphic designer</p>
+                <h1>Hi, I'm <span>Kagiso</span><br> from Gauteng</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------------About section--------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/user2.png">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Kagiso Mahoko from Vaal in Gauteng. I love expressing my creativity through
+                       design and illustration.
+                       It all started at college when I was studying film and I would design posters and covers, 
+                       people loved my work so they wanted me to design more things from logos to business cards. 
+                       Since then I've been freelancing as a graphic designer for more than 5 years. 
+                       <br><br>
+                       I enjoy working on a project from concept till it comes to life but my biggest joy
+                       is having a happy client after seeing how I translated their brief to visuals.
+                       My best friend is Photoshop and I love the quality that comes with Illustrator.
+                       When I'm not staring at a computer screen, I play with brushes and paint to express my self.
+                   </p>
+
+                   <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('software')">Software</p>
+                   </div>
+
+                   <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Illustration</span><br>Character design for 2d animation</li>
+                            <li><span>Brand identity</span><br>Brand identity</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                   </div>
+
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021</span><br>Character design for 2d animation</li>
+                        <li><span>2022</span><br>Brand identity</li>
+                        <li><span>2023</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                   </div>
+
+                   <div class="tab-contents" id="software">
+                <ul>
+                    <li><span>Illustrator</span><br>Character design for 2d animation</li>
+                    <li><span>Photoshop</span><br>Brand identity</li>
+                    <li><span>After effects</span><br>Designing Web/App interfaces</li>
+                </ul>
+                   </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------Portfolio section--------------------------------->
+
+    <div id="porti">
+    <div class="kontainer">
+
+        <h1 class="portfolio-title">Portfolio</h1>
+        <div class="gallery">
+
+            <a href="imagez/1.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/1.jpg">
+            </a>
+
+            <a href="imagez/2.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/2.jpg">
+            </a>
+
+            <a href="imagez/3.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/3.jpg">
+            </a>
+
+            <a href="imagez/4.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/4.jpg">
+            </a>
+
+            <a href="imagez/5.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/5.jpg">
+            </a>
+
+            <a href="imagez/6.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/6.jpg">
+            </a>
+
+            <a href="imagez/7.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/7.jpg">
+            </a>
+
+            <a href="imagez/8.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/8.jpg">
+            </a>
+
+            <a href="imagez/9.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/9.jpg">
+            </a>
+
+            <a href="imagez/10.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/10.jpg">
+            </a>
+
+            <a href="imagez/11.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/11.jpg">
+            </a>
+
+            <a href="imagez/12.jpg" data-lightbox="portfolio" data-title="Illustration">
+                <img src="imagez/12.jpg">
+            </a>
+            
+        </div>
+
+    </div>
+    </div>
+
+    <!---------------------------Contact section--------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>kagisomahoko@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>083 642 3671</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Kagiso Mahoko 2023</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+
+    <script src="lightbox-plus-jquery.js"></script>
+    
+<script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+    
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+</script>  
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw-7_ZEQ6xppO_hhp1hXfVDAsK_p8jlGKqrsLFjFx4-gcPcFRyyPEqv9rFVsvp5X2UAgg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+    
+</body>
+</html>
